@@ -1,0 +1,6 @@
+rootProject.name = 'react-native-app'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+include ":UnityExport"
+project(":UnityExport").projectDir = file("./UnityExport")
+//project(":UnityExport").projectDir = new File('..\\android\\UnityExport\\unityLibrary')
